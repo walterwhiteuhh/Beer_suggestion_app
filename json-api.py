@@ -1,7 +1,9 @@
 import json
 import requests
 
-url = 'https://api.punkapi.com/v2/beers?food=pie'
+food_choice = input('Please enter your dinner choice: ')
+
+url = f'https://api.punkapi.com/v2/beers?food={food_choice}'
 
 r = requests.get(url)
 
