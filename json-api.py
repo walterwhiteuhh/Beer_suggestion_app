@@ -9,9 +9,19 @@ r = requests.get(url)
 
 data = json.loads(r.text)
 
-print(data[0]['name'], data[0]['tagline'], data[0]['abv'])
+beer_list = []
 
-#print(len(data))
+for beer in data:
+    name = beer['name']
+    tagline = beer['tagline']
+    
+
+    beer_item = {
+        'name': name,
+        'tagline': tagline
+    }
+    beer_list.append(beer_item)
+
 
 
 
