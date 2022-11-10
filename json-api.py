@@ -16,15 +16,14 @@ for beer in data:
     name = beer['name']
     tagline = beer['tagline']
     alcohol = beer['abv']
-    
 
     beer_item = {
         'name': name,
-        'tagline': tagline,
+        'tagline': tagline
         'abv': alcohol
     }
     beer_list.append(beer_item)
-
+    
 value = randint(0, len(beer_list))
 
 try_this = beer_list[value]
