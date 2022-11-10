@@ -30,6 +30,7 @@ try_this = beer_list[value]
 try_name = try_this['name']
 try_tagline = try_this['tagline']
 
+print(f'You shuld try {try_name}, {try_tagline}')
 
 
 
