@@ -15,11 +15,12 @@ beer_list = []
 for beer in data:
     name = beer['name']
     tagline = beer['tagline']
-    
+    abf = ['abf']
 
     beer_item = {
         'name': name,
-        'tagline': tagline
+        'tagline': tagline,
+        'abf': abf
     }
     beer_list.append(beer_item)
     
@@ -29,8 +30,8 @@ try_this = beer_list[value]
 
 try_name = try_this['name']
 try_tagline = try_this['tagline']
-
-print(f'You shuld try {try_name}, {try_tagline}')
+try_abf = try_this['abf']
+print(f'You shuld try {try_name}, {try_tagline}, {try_abf}')
 
 
 
