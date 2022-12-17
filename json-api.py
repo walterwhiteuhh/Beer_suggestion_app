@@ -25,8 +25,28 @@ beer_list = []
 for beer in data:
     name = beer['name']
     tagline = beer['tagline']
+<<<<<<<<< Temporary merge branch 1
+    
+
+    beer_item = {
+        'name': name,
+        'tagline': tagline
+    }
+    beer_list.append(beer_item)
+    
+value = randint(0, len(beer_list))
+
+try_this = beer_list[value]
+
+try_name = try_this['name']
+try_tagline = try_this['tagline']
+
+print(f'You shuld try {try_name}, {try_tagline}')
+=========
     alcohol = beer['abv']
     
+>>>>>>>>> Temporary merge branch 2
+
     beer_item = {
         'name': name,
         'tagline': tagline,
@@ -34,7 +54,7 @@ for beer in data:
     }
     beer_list.append(beer_item)
 
-value = randint(2, len(beer_list))
+value = randint(0, len(beer_list))
 
 try_this = beer_list[value]
 
